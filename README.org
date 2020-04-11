@@ -1,0 +1,34 @@
+#+TITLE:  Trade Log Library
+#+DATE:    April 11, 2020
+#+SINCE:   {replace with next tagged release version}
+#+STARTUP: inlineimages nofold
+
+* Table of Contents :TOC_3:noexport:
+- [[#description][Description]]
+  - [[#maintainers][Maintainers]]
+- [[#prerequisites][Prerequisites]]
+- [[#features][Features]]
+- [[#configuration][Configuration]]
+- [[#troubleshooting][Troubleshooting]]
+
+* Description
+A library to manage a database of your trading log. Uses Diesel.
+
+** Maintainers
++ [[github:afsharalex][@afsharalex]] (Author)
+
+* Prerequisites
+This depends on Postgres. This can be changed by changing the `features` line
+for the Diesel dependency, however be sure to ensure all SQL is compatible with
+your target database.
+
+* Features
+
++ Manage Stocks, and Trades (Purchases and Sales)
++ Easily use the data to view performance
+
+* Configuration
+To get started, install the diesel-cli, create the database, and run the migrations. Copy the
+`env.example` as `.env` and set the `DATABASE_URL`.
+
+* Troubleshooting
